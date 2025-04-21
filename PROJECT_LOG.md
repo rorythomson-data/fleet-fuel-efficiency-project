@@ -1,71 +1,47 @@
-# 🗒️ Project Log – Fleet Fuel Efficiency Project
+# Fleet Fuel Efficiency Project – Summary Log
 
-## 1. **Project Overview**
-
-- **Objective**: The goal of this project is to analyze and improve the fuel efficiency of a fleet of vehicles using telemetry data. Specifically, the analysis will focus on GPS data, fuel consumption, and driver behavior to uncover patterns that can lead to better route planning, fuel savings, and vehicle maintenance.
-  
-- **Tools and Technologies Used**: Python, Jupyter Notebook, Pandas, Matplotlib, Seaborn, Scikit-learn, Git, GitHub
+## Project Overview
+- **Objective**: Analyze and optimize fuel efficiency using telemetry data (e.g., GPS, fuel consumption, driver behavior).
+- **Tools**: Python, Jupyter, Pandas, Scikit-learn, Git, GitHub.
 
 ---
 
-## 2. **Setup and Initialization**
+## Key Milestones
 
-- **Date**: April 17, 2025  
-- **Action**: Ran `git init` to initialize a new Git repository. Set up the folder structure with `data/`, `notebooks/`, `output/`, `.gitignore`, `README.md`, and `PROJECT_LOG.md`.  
-- **Problem**: Encountered issues with PowerShell blocking script execution when trying to activate the virtual environment.  
-- **Solution**: Switched to **Command Prompt** and successfully activated the virtual environment with `venv\Scripts\activate`.
+### **April 17, 2025**
+- Initialized the GitHub repository, set up folder structure, and configured environment.
 
----
+### **April 18, 2025**
+- Conducted initial exploratory data analysis (EDA), visualized fuel consumption, and cleaned data.
 
-## 3. **Milestones**
+### **April 19, 2025**
+- Explored feature engineering opportunities like time of day, average speed, idle time.
 
-### **Date**: April 18, 2025  
-**Goal**: Complete initial exploratory data analysis (EDA) on the fleet fuel efficiency dataset.  
-**Progress**:  
-- Loaded the dataset into a Jupyter notebook (`eda_fuel_efficiency.ipynb`).
-- Ran `.head()`, `.info()`, and `.describe()` methods on the dataset.
-- Visualized fuel consumption using `matplotlib` and `seaborn`.
-- Cleaned missing values from key columns (e.g., fuel consumption, vehicle IDs).
-- Observed no major issues during this step; the dataset seems well-structured.
-
-**Problems faced and solutions**:  
-- Encountered some missing values in the fuel consumption data, but handled them by replacing with the mean value.
-- Decided to split the dataset into two parts (one for training and one for validation) based on available time series data.
+### **April 21, 2025**
+- Linked GitHub repo to local project, pushed files, and began repository cleanup.
 
 ---
 
-## 4. **Technical Decisions**
-
-### **Date**: April 19, 2025  
-**Decision**: Choose between different types of feature engineering (time of day, average speed, idle time).  
-**Why**: After doing some initial EDA, I realized that creating features related to the time of day, average speed, and idle time could give insight into the driving habits of different drivers, which might help predict fuel consumption better.
+## Challenges & Solutions
+- **Issue**: Difficulty with syncing data between local Git and GitHub.
+- **Solution**: Resolved by checking remote repository configurations and adjusting file paths.
 
 ---
 
-## 5. **Reflection and Lessons Learned**
+## Next Steps
 
-### **Date**: April 19, 2025  
-**Lessons Learned**:  
-- **Handling missing data**: I learned that while mean imputation is simple and effective, it's worth considering other imputation methods in the future (e.g., using machine learning for imputation).
-- **Visualization for EDA**: I feel more comfortable using `matplotlib` and `seaborn` for visualizing trends and outliers. It’s a powerful way to spot issues quickly.
-
-**What I would do differently**:  
-- I will spend more time cleaning and preparing the data before diving into feature engineering to avoid confusion later in the project.
+- **Feature Engineering**: Add advanced features like trip distance and weather data.
+- **Modeling**: Experiment with regression models (e.g., Random Forest, XGBoost).
+- **Optimization**: Begin exploring possible optimizations like route planning and driver behavior adjustments.
 
 ---
 
-## 6. **Next Steps and Plan**
+## Summary of Key Learnings
+- **Handling Missing Data**: Dealt with missing values using mean imputation.
+- **EDA Best Practices**: Gained confidence with `matplotlib`/`seaborn` for visualizing trends and outliers.
+- **GitHub Workflow**: Learned best practices for syncing repositories and handling file structure.
 
-### **Date**: April 20, 2025  
-**Next Steps**:  
-- Continue with feature engineering: adding more advanced features (e.g., distance between locations, traffic patterns).
-- Explore unsupervised learning methods for clustering vehicles based on behavior.
-- Prepare for the upcoming Datathon challenge by testing out a few potential models (e.g., regression, random forest).
-  
-**Short-term goals**:  
-- Finish feature engineering and get the dataset ready for model training.  
-- Experiment with a couple of basic machine learning models on the data.
+---
 
-**Long-term goals**:  
-- Build a model that can accurately predict fuel consumption based on the data.
-- Visualize model performance and interpretability for the Datathon.
+## Troubleshooting
+For more details on specific issues encountered during the project setup, visit the [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) file.
